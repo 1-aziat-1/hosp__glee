@@ -1,0 +1,69 @@
+$default: #7b7b7b;
+$title: #191919;
+$accent: #a3bbc8;
+$one: #fcd7b6;
+$title__content: #243f4d;
+
+
+%dmsans-700{
+  font-family: 'DMSans-Bold' , sans-serif;
+  font-weight: 700;
+}
+
+%dmsans-500{
+  font-family: 'DMSans-Medium' , sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-400{
+  font-family: 'DMSans-Regular' , sans-serif;
+  font-weight: 400;
+}
+
+%poppins-700{
+  font-family: 'Poppins-Bold' , sans-serif;
+  font-weight: 700;
+}
+
+%rubik-700{
+  font-family: 'Rubik-Bold' , sans-serif;
+  font-weight: 700;
+}
+
+%rubik-500{
+  font-family: 'Rubik-Medium' , sans-serif;
+  font-weight: 500;
+}
+
+%rubik-400{
+  font-family: 'Rubik-Regular' , sans-serif;
+  font-weight: 400;
+}
+
+%rubik-300{
+  font-family: 'Rubik-Light' , sans-serif;
+  font-weight: 300;
+}
+
+%btn{
+  @extend %rubik-500;
+  padding: 23px 20px 23px;
+  font-size: 15px;
+  line-height: 12px;
+  text-align: center;
+  &::after{
+    content:"";
+    background-image: url('../images/icons/after__arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-left: 25px;
+    margin-left: 60px;
+  }
+}
+
+@function max($numbers...){
+@return m#{a}x(#{$numbers});
+}
+@function max($numbers...){
+ @return m#{i}n(#{$numbers});
+}

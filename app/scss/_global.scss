@@ -1,0 +1,88 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  @extend %rubik-400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $default;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 28px;
+  color: $default;
+  @extend %rubik-400;
+  cursor: pointer;
+}
+
+.title{
+  font-size: 36px;
+  line-height: 54px;
+  color: $title;
+  @extend %dmsans-700;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.filter{
+  @extend %dmsans-700;
+  margin-bottom: 75px;
+  text-align: center;
+  button{
+    background-color: #fff;
+    border: none;
+    color: #8b8b8b;
+    padding: 0;
+    outline-color: #fff;
+  }
+  button:hover{
+    color:  $title;
+  }
+}
+.filter-btn + .filter-btn{
+  padding-left: 30px;
+}
+
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+  &__list{
+    display: flex;
+   
+  }
+  &__item{
+    padding-right: 10px;
+    &::after{
+      content: '/';
+      padding-left: 5px;
+    }
+    &:last-child{
+      &::after{
+        display: none;
+        padding-right: 0;
+      }
+    }
+  }
+  &__link{
+    color: inherit;
+  }
+}
