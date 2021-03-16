@@ -86,3 +86,24 @@ a{
     color: inherit;
   }
 }
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  a{
+    padding: 15px;
+    border: 1px solid $accent;
+    margin-right: 15px;
+  }
+  &__list{
+    display: flex;
+  }
+  &__link--active{
+    color: #fff;
+    background-color: $accent;
+  }
+}
+
+.pagination__2{
+  justify-content: left;
+}

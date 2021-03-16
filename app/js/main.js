@@ -15,6 +15,16 @@ $(function () {
 
   $(function () {
 
+    $(".star__list").rateYo({
+      rating: 3.6,
+      starWidth: "20px",
+      readOnly: true
+    });
+
+  });
+
+  $(function () {
+
     $(".star").rateYo({
       rating: 3.6,
       starWidth: "12px",
