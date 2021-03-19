@@ -45,6 +45,14 @@ $title__content: #243f4d;
   font-weight: 300;
 }
 
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0 );
+  position: absolute;
+}
+
 %btn{
   @extend %rubik-500;
   padding: 23px 20px 23px;
