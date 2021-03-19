@@ -1,5 +1,21 @@
 $(function () {
 
+  $('.product-slider__thumb').slick({
+    asNavFor: '.product-slider__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false,
+    arrows: false
+  });
+  $('.product-slider__big').slick({
+    asNavFor: '.product-slider__thumb',
+    draggable: false,
+    arrows: false,
+    fade: true
+  });
+
   $('.shop__content-btn').on('click',function (){
     $('.shop__content-btn').removeClass('shop__content-btn--active');
     $(this).addClass('shop__content-btn--active');
