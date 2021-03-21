@@ -1,4 +1,6 @@
 $(function () {
+  
+  $('.product-page__input').styler();
 
   $('.product-slider__thumb').slick({
     asNavFor: '.product-slider__big',
@@ -36,6 +38,14 @@ $(function () {
       starWidth: "20px",
       readOnly: true
     });
+
+
+    $(".star__product").rateYo({
+      spacing: "10px",
+      starWidth: "12px",
+      readOnly: true 
+    });
+    
 
   });
 
